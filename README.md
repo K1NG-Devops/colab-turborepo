@@ -35,28 +35,25 @@ colab-turborepo/
 git clone https://github.com/king-judaah/colab-turborepo.git
 cd colab-turborepo
 ```
-```
 2. Install Dependencies
-
-
-
-npm install
 ```
+npm install
 ```
 3. Run Apps Concurrently
 
+```
 npx turbo run dev
+```
 Or run specific apps:
-
-
+```
 npx turbo run dev --filter=react-app
 npx turbo run dev --filter=angular-app
 npx turbo run dev --filter=api
+```
+---
 Make sure each app has a dev script in its own package.json.
-```
-```
-
 🧱 Technologies
+
 Turborepo
 
 React + Vite
@@ -75,9 +72,7 @@ TypeScript (recommended)
  Dockerize backend services
 
  Deploy to Vercel / Netlify / Render
-```
 ---
-```
 📄 License
 MIT License © 2025 Marrion J Makunyane
 
@@ -86,5 +81,4 @@ Pull requests are welcome. For major changes, open an issue first to discuss wha
 
 💬 Contact
 For questions, email: king@roboworld.co.za
-```
 ---
