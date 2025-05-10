@@ -15,7 +15,7 @@ A modern monorepo setup using **Turborepo** to manage multiple full-stack applic
 ---
 
 ## 📁 Folder Structure
-
+```
 colab-turborepo/
 ├── apps/
 │ ├── react-app/ # React frontend (Vite)
@@ -26,24 +26,23 @@ colab-turborepo/
 ├── turbo.json # Turborepo config
 ├── package.json
 └── README.md
-
-yaml
-Copy
-Edit
-
+```
 ---
-
 ## 🚀 Getting Started
 
 ### 1. Clone the Repo
 ```bash
 git clone https://github.com/king-judaah/colab-turborepo.git
 cd colab-turborepo
+```
+```
 2. Install Dependencies
 bash
 Copy
 Edit
 npm install
+```
+```
 3. Run Apps Concurrently
 bash
 Copy
@@ -58,6 +57,8 @@ npx turbo run dev --filter=react-app
 npx turbo run dev --filter=angular-app
 npx turbo run dev --filter=api
 Make sure each app has a dev script in its own package.json.
+```
+```
 
 🧱 Technologies
 Turborepo
@@ -78,6 +79,7 @@ TypeScript (recommended)
  Dockerize backend services
 
  Deploy to Vercel / Netlify / Render
+```
 
 📄 License
 MIT License © 2025 Marrion J Makunyane
@@ -86,4 +88,4 @@ MIT License © 2025 Marrion J Makunyane
 Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
 
 💬 Contact
-For questions, email: king.judaah@gmail.com
+For questions, email: king.roboworld.co.za
