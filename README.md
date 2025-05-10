@@ -76,7 +76,8 @@ TypeScript (recommended)
 
  Deploy to Vercel / Netlify / Render
 ```
-
+---
+```
 📄 License
 MIT License © 2025 Marrion J Makunyane
 
@@ -84,4 +85,6 @@ MIT License © 2025 Marrion J Makunyane
 Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
 
 💬 Contact
-For questions, email: king.roboworld.co.za
+For questions, email: king@roboworld.co.za
+```
+---
