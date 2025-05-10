@@ -70,8 +70,8 @@ TypeScript (recommended)
 🛠 Future Enhancements
  Add CI/CD pipeline
 
- Dockerize backend services
 ---
+ Dockerize backend services
  Deploy to Vercel / Netlify / Render
  
 📄 License
