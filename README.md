@@ -1,84 +1,89 @@
-# Turborepo starter
+# 📦 colab-turborepo
 
-This Turborepo starter is maintained by the Turborepo core team.
+A modern monorepo setup using **Turborepo** to manage multiple full-stack applications in a collaborative environment. This project supports **React (Vite)**, **Angular**, and **Node.js** backend services. It’s designed for scalability, code reuse, and efficient team collaboration.
 
-## Using this example
+---
 
-Run the following command:
+## 🔧 Features
 
-```sh
-npx create-turbo@latest
-```
+- ⚡️ **Turborepo** for high-performance build orchestration
+- 🧩 **React** and **Angular** frontends in the same workspace
+- 🔙 **Node.js/Express** API backend
+- 🗂 Shared packages for reusable components and utilities
+- ✅ Easy to develop, test, and deploy apps independently or together
 
-## What's inside?
+---
 
-This Turborepo includes the following packages/apps:
+## 📁 Folder Structure
 
-### Apps and Packages
+colab-turborepo/
+├── apps/
+│ ├── react-app/ # React frontend (Vite)
+│ ├── angular-app/ # Angular frontend
+│ └── api/ # Node.js backend
+├── packages/
+│ └── ui/ # Shared UI components
+├── turbo.json # Turborepo config
+├── package.json
+└── README.md
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+yaml
+Copy
+Edit
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+---
 
-### Utilities
+## 🚀 Getting Started
 
-This Turborepo has some additional tools already setup for you:
+### 1. Clone the Repo
+```bash
+git clone https://github.com/king-judaah/colab-turborepo.git
+cd colab-turborepo
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+3. Run Apps Concurrently
+bash
+Copy
+Edit
+npx turbo run dev
+Or run specific apps:
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+bash
+Copy
+Edit
+npx turbo run dev --filter=react-app
+npx turbo run dev --filter=angular-app
+npx turbo run dev --filter=api
+Make sure each app has a dev script in its own package.json.
 
-### Build
+🧱 Technologies
+Turborepo
 
-To build all apps and packages, run the following command:
+React + Vite
 
-```
-cd my-turborepo
-pnpm build
-```
+Angular
 
-### Develop
+Node.js + Express
 
-To develop all apps and packages, run the following command:
+Tailwind CSS (optional for UI)
 
-```
-cd my-turborepo
-pnpm dev
-```
+TypeScript (recommended)
 
-### Remote Caching
+🛠 Future Enhancements
+ Add CI/CD pipeline
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+ Dockerize backend services
 
-Turborepo can use a technique known as [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
+ Deploy to Vercel / Netlify / Render
 
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
+📄 License
+MIT License © 2025 Marrion J Makunyane
 
-```
-cd my-turborepo
-npx turbo login
-```
+🤝 Contributing
+Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
 
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turborepo.com/docs/crafting-your-repository/running-tasks)
-- [Caching](https://turborepo.com/docs/crafting-your-repository/caching)
-- [Remote Caching](https://turborepo.com/docs/core-concepts/remote-caching)
-- [Filtering](https://turborepo.com/docs/crafting-your-repository/running-tasks#using-filters)
-- [Configuration Options](https://turborepo.com/docs/reference/configuration)
-- [CLI Usage](https://turborepo.com/docs/reference/command-line-reference)
+💬 Contact
+For questions, email: king.judaah@gmail.com
