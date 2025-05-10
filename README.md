@@ -29,30 +29,26 @@ colab-turborepo/
 ```
 ---
 ## 🚀 Getting Started
-
+---
 ### 1. Clone the Repo
-```bash
+```
 git clone https://github.com/king-judaah/colab-turborepo.git
 cd colab-turborepo
 ```
 ```
 2. Install Dependencies
-bash
-Copy
-Edit
+
+
+
 npm install
 ```
 ```
 3. Run Apps Concurrently
-bash
-Copy
-Edit
+
 npx turbo run dev
 Or run specific apps:
 
-bash
-Copy
-Edit
+
 npx turbo run dev --filter=react-app
 npx turbo run dev --filter=angular-app
 npx turbo run dev --filter=api
