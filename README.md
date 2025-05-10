@@ -50,8 +50,8 @@ npx turbo run dev --filter=react-app
 npx turbo run dev --filter=angular-app
 npx turbo run dev --filter=api
 ```
----
 Make sure each app has a dev script in its own package.json.
+
 ---
 🧱 Technologies
 ---
