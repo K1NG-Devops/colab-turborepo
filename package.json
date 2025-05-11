@@ -4,6 +4,7 @@
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
+    "start": "node apps/api/src/server.js",
     "dev:react": "turbo run dev --filter=react",
     "dev:angular": "turbo run dev --filter=angular",
     "dev:api": "turbo run dev --filter=api",
